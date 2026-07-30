@@ -1,23 +1,79 @@
 aid: knl
 name: KNL
-description: 'KNL is a company surfaced as a portfolio company of creandum and added to the API Evangelist
-  network as a stub for enrichment. Sector: other. This profile is a lead awaiting the enrichment pipeline.'
+description: 'KNL (KNL Networks Oy) is a Finnish defence-technology company founded in 2011 and headquartered
+  in Oulu, Finland, that builds long-range, GNSS-independent HF radio communication systems for military,
+  naval, and critical-communications operators. Its Cognitive Networked HF (CNHF) platform is a family of
+  software-defined radios — CNHF Manpack, CNHF1 Radio, CNHF Vehicular, and CNHF Evolve — that perform
+  continuous spectrum estimation and automatically switch to the next best channel to sustain IP data links
+  over thousands of kilometres in jammed, contested, or infrastructure-denied environments. Radios are
+  operated through a web-based CNHF User Interface providing role-based access, webmail, XMPP-interoperable
+  instant messaging, mapping, and spectrum analysis. KNL was acquired by Telenor Maritime at the end of 2020
+  and now operates as Telenor''s dedicated defence and security connectivity business. The company holds ISO
+  9001, AQAP 2110 (NATO), and ISO/IEC 27001 certifications and publishes no public developer API surface.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://knl.fi/files/uploads/2023/01/KNL-element400x400-333x333.png
 url: https://raw.githubusercontent.com/api-evangelist/knl/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - creandum
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: no-public-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Other
+- Defence
+- Radio Communications
+- Software Defined Radio
+- Tactical Communications
+- Critical Communications
+- HF
+- Networking
+- Finland
+- Hardware
 apis: []
+common:
+- type: DomainSecurity
+  url: security/knl-domain-security.yml
+- type: Website
+  url: https://knl.fi/
+- type: Products
+  url: https://knl.fi/products/
+- type: Support
+  url: https://knl.fi/contact/
+- type: Blog
+  url: https://knl.fi/newsroom/
+- type: GitHubOrganization
+  url: https://github.com/KNLNetworks
+- type: TermsOfService
+  url: https://knl.fi/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://knl.fi/privacy-policy/
+- type: Compliance
+  url: conformance/knl-conformance.yml
+- type: Conformance
+  url: conformance/knl-conformance.yml
+- type: LLMsTxt
+  url: llms/knl-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
