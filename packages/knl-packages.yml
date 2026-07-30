@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: public package registry search (npm, PyPI, Maven Central, NuGet, crates.io, RubyGems, Packagist)
+notes: >-
+  Negative-result record so re-runs do not re-sweep blindly. KNL ships defence radio hardware and
+  an embedded web UI; it publishes no public client libraries or SDKs. No Packages or SDKs pointer
+  is wired into apis.yml — there is nothing to point at. The first-party GitHub organization
+  https://github.com/KNLNetworks exists and is verifiably KNL's (org website field is
+  knlnetworks.com, which 301-redirects to knl.fi) but has zero public repositories and no public
+  members.
+packages: []
+registries_searched:
+- registry: npm
+  query: knl networks / cnhf
+  first_party_hits: 0
+  note: only unrelated third-party packages matched
+- registry: pypi
+  query: knl
+  first_party_hits: 0
+  note: https://pypi.org/pypi/knl/json returned 404
+- registry: maven-central
+  query: knl
+  first_party_hits: 0
+- registry: nuget
+  query: knl networks
+  first_party_hits: 0
+- registry: crates.io
+  query: cnhf
+  first_party_hits: 0
+- registry: rubygems
+  query: knl networks
+  first_party_hits: 0
+- registry: packagist
+  query: knl networks
+  first_party_hits: 0
+github:
+  org: https://github.com/KNLNetworks
+  exists: true
+  public_repos: 0
+  public_members: 0

@@ -1,0 +1,66 @@
+generated: '2026-07-19'
+method: searched
+source: https://knl.fi/company/why-choose-knl/
+notes: >-
+  KNL publishes no public developer API, so there is no OpenAPI/spec-level conformance to assert.
+  What KNL does publish is a set of named quality, security, environmental, and interoperability
+  standards for its CNHF software-defined radio product line. Those are captured here verbatim as
+  published. Entries are product/organisational conformance, not web-API conformance.
+conformance:
+- id: iso-9001
+  name: ISO 9001
+  category: quality-management
+  conforms: true
+  evidence: >-
+    "A comprehensive quality management system, which ensures product quality and continuous
+    improvement." — https://knl.fi/company/why-choose-knl/
+- id: aqap-2110
+  name: AQAP 2110
+  category: defence-quality-assurance
+  conforms: true
+  evidence: >-
+    "NATO-specific quality assurance standard for defence procurement confirms the ability to meet
+    essential military specifications." — https://knl.fi/company/why-choose-knl/
+- id: iso-iec-27001
+  name: ISO/IEC 27001
+  category: information-security-management
+  conforms: true
+  evidence: >-
+    "Certifies the information security management system, guaranteeing the highest data protection
+    and cybersecurity levels." — https://knl.fi/company/why-choose-knl/
+- id: mil-std-810h
+  name: MIL-STD-810H
+  category: environmental-test
+  conforms: true
+  evidence: >-
+    "Industry standard verified by an independent third party"; testing "includes water, drop, and
+    temperature tests, among others." — https://knl.fi/company/why-choose-knl/
+- id: aes-256
+  name: AES-256 encryption
+  category: cryptography
+  conforms: true
+  evidence: >-
+    "The highest level of security for all communications." — https://knl.fi/company/why-choose-knl/
+- id: xmpp
+  name: XMPP (RFC 6120/6121)
+  category: messaging-interoperability
+  conforms: true
+  evidence: >-
+    CNHF User Interface is "Interoperable with XMPP standard" and "Enables also use with an external
+    XMPP client and connection to an external XMPP server." — https://knl.fi/products/cnhf-user-interface/
+- id: ip-over-hf
+  name: IP over HF
+  category: networking
+  conforms: true
+  evidence: >-
+    KNL publishes "IP over HF: Proven, secure data transmission for infrastructure-denied
+    environments" — https://knl.fi/newsroom/ip-over-hf/
+not_asserted:
+- id: oauth2
+  reason: no public API or authorization server published
+- id: oidc
+  reason: no /.well-known/openid-configuration (404)
+- id: rfc9457
+  reason: no public OpenAPI or error surface published
+- id: json-api
+  reason: no public API published

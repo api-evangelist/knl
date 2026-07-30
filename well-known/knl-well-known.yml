@@ -1,0 +1,49 @@
+generated: '2026-07-19'
+method: probed
+source: https://knl.fi/
+host: https://knl.fi
+notes: >-
+  Negative-result record so re-runs do not re-probe blindly. KNL publishes no /.well-known/
+  discovery surface. The one machine-readable discovery document the site does serve is
+  /llms.txt (Yoast SEO generated), captured verbatim at llms/knl-llms.txt. Because no
+  /.well-known/ document returned 200, no WellKnown or SecurityTxt pointer is wired into
+  apis.yml — absence is valid data, not a gap to be filled with a fabricated file.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /security.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /feed/
+  status: 404
+- path: /llms.txt
+  status: 200
+  file: ../llms/knl-llms.txt
+- path: /robots.txt
+  status: 200
+- path: /sitemap_index.xml
+  status: 200
+subdomains_probed:
+- host: api.knl.fi
+  resolves: false
+- host: developer.knl.fi
+  resolves: false
+- host: docs.knl.fi
+  resolves: false
+- host: status.knl.fi
+  resolves: false
+- host: trust.knl.fi
+  resolves: false
+- host: careers.knl.fi
+  resolves: true
+  cname: ext.teamtailor.com
+  status: 200
