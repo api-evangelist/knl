@@ -10,6 +10,17 @@ description: 'KNL (KNL Networks Oy) is a Finnish defence-technology company foun
   instant messaging, mapping, and spectrum analysis. KNL was acquired by Telenor Maritime at the end of 2020
   and now operates as Telenor''s dedicated defence and security connectivity business. The company holds ISO
   9001, AQAP 2110 (NATO), and ISO/IEC 27001 certifications and publishes no public developer API surface.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
