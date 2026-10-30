@@ -64,51 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-KNL (KNL Networks Oy) is a Finnish defence-technology company founded in 2011 and headquartered in Oulu,
-Finland. It builds long-range, GNSS-independent HF radio communication systems for military, naval, and
-critical-communications operators. Its Cognitive Networked HF (CNHF) platform is a family of software-defined
-radios — CNHF Manpack, CNHF1 Radio, CNHF Vehicular, and CNHF Evolve — that perform continuous spectrum
-estimation and automatically switch to the next best channel to sustain IP data links over thousands of
-kilometres in jammed, contested, or infrastructure-denied environments.
+KNL (KNL Networks Oy) is a Finnish defence-technology company founded in 2011 and headquartered in Oulu, Finland, that builds long-range, GNSS-independent HF radio communication systems for military, naval, and critical-communications operators. Its Cognitive Networked HF (CNHF) platform is a family of software-defined radios — CNHF Manpack, CNHF1 Radio, CNHF Vehicular, and CNHF Evolve — that perform continuous spectrum estimation and automatically switch to the next best channel to sustain IP data links over thousands of kilometres in jammed, contested, or infrastructure-denied environments. Radios are operated through a web-based CNHF User Interface providing role-based access, webmail, XMPP-interoperable instant messaging, mapping, and spectrum analysis. KNL was acquired by Telenor Maritime at the end of 2020 and now operates as Telenor's dedicated defence and security connectivity business. The company holds ISO 9001, AQAP 2110 (NATO), and ISO/IEC 27001 certifications and publishes no public developer API surface.
 
-Radios are operated through a web-based CNHF User Interface offering role-based access (Admin/User/Monitor),
-webmail, XMPP-interoperable instant messaging, real-time mapping, spectrum analysis, and EMCON mode
-selection.
+**Areas:** Company · Defence · Radio Communications · Software Defined Radio · Tactical Communications · Critical Communications · HF · Networking · Finland · Hardware
 
-KNL was acquired by Telenor Maritime at the end of 2020 and now operates as Telenor's dedicated defence and
-security connectivity business.
+## KNL on APIs.io
 
-- Website: https://knl.fi/ (knlnetworks.com 301-redirects here)
-- Products: https://knl.fi/products/
-- Newsroom: https://knl.fi/newsroom/
-- Careers: https://careers.knl.fi/
+Everything profiled for KNL is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/knl/](https://apis.io/providers/knl/)** — or go straight to one of the APIs or properties below.
 
-Backed by: creandum (Series A, 2016, $10M — led by Creandum with Inventure and Butterfly Ventures)
+### Published properties
 
-## No public API surface
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-KNL publishes **no public developer API, OpenAPI specification, developer portal, documentation site, SDK, or
-CLI**. This is expected for a defence hardware vendor selling to sovereign customers under export control.
-Verified absent as of 2026-07-19:
+#### Security (1)
 
-- `api.knl.fi`, `developer.knl.fi`, `docs.knl.fi`, `status.knl.fi`, `trust.knl.fi` — do not resolve
-- All `/.well-known/` discovery documents — 404
-- `github.com/KNLNetworks` — org exists and is first-party, but has zero public repositories
-- npm, PyPI, Maven Central, NuGet, crates.io, RubyGems, Packagist — no first-party packages
+Authentication, trust centre, and vulnerability disclosure.
 
-Consequently the spec-dependent artifacts in the enrichment pipeline (`openapi/`, `overlays/`, `errors/`,
-`scopes/`, `authentication/`, `mcp/`, `skills/`, `data-model/`, `conventions/`, `sandbox/`, `cli/`,
-`components/`, `asyncapi/`, `grpc/`) are **intentionally absent rather than fabricated**.
+- [Knl Domain Security](https://apis.io/security/knl/knl-domain-security/)
 
-## Artifacts present
+## Where to find this API
 
-| Path | Type | Method |
-|---|---|---|
-| `llms/knl-llms.txt` | LLMsTxt | searched — verbatim from https://knl.fi/llms.txt |
-| `conformance/knl-conformance.yml` | Conformance + Compliance | searched — ISO 9001, AQAP 2110, ISO/IEC 27001, MIL-STD-810H, AES-256, XMPP |
-| `security/knl-domain-security.yml` | DomainSecurity | probed — TLS 1.3, SPF, DMARC (p=none); no HSTS, no DNSSEC, no CAA |
-| `well-known/knl-well-known.yml` | — (negative record) | probed |
-| `packages/knl-packages.yml` | — (negative record) | searched |
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-The two negative records carry no `apis.yml` pointer; they exist so re-runs of the pipeline do not re-probe
-a surface already confirmed empty.
+- [Website](https://knl.fi/)
+- [Support](https://knl.fi/contact/)
+- [Blog](https://knl.fi/newsroom/)
+- [Terms of service](https://knl.fi/terms-and-conditions/)
+- [Privacy policy](https://knl.fi/privacy-policy/)
+- [GitHub](https://github.com/KNLNetworks)
+
+## API Evangelist rating
+
+**Kin Score 16.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 23.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/knl/](https://apis.io/providers/knl/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for KNL: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/knl/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
